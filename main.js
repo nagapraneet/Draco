@@ -15,22 +15,22 @@ function my_mousedown(e)
 }
 
 canvas.addEventListener("mouseleave" , my_mouseleave);
-function my_mousedown(e)
+function my_mouseleave(e)
 {
     mouse_Event = "mouseleave";
 }
 
 canvas.addEventListener("mouseup" , my_mouseup);
-function my_mousedown(e)
+function my_mouseup(e)
 {
     mouse_Event = "mouseUP";
 }
 
 canvas.addEventListener("mousemove" , my_mousemove);
-function my_mousedown(e)
+function my_mousemove(e)
 {
- cx = e-clientX - canvas.offsetLeft;
- cx = e-clientY - canvas.offsetTop;
+ cx = e.clientX - canvas.offsetLeft;
+ cx = e.clientY - canvas.offsetTop;
 
  if (mouseEvent == "mouseDown") {
     ctx.beginPath();
